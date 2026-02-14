@@ -52,7 +52,7 @@ export default function Home() {
             alt="Hero image"
             fill
             priority
-            className="object-cover"
+            className="object-cover transparent-[80%]"
           />
 
           <div className="relative z-10 max-w-6xl mx-auto h-full px-4 flex flex-col justify-center items-start gap-7">

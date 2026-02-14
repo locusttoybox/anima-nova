@@ -60,15 +60,9 @@ const Navbar = () => {
 
           {/* Desktop Links */}
           <ul className="hidden md:flex text-[18px] space-x-10 text-gray-800">
-            <li>
-              <a href="#about">Par Mums</a>
-            </li>
-            <li>
-              <a href="#projects">Projekti</a>
-            </li>
-            <li>
-              <a href="#contact">Kontakti</a>
-            </li>
+            <Link href="/about">Par Biedrību</Link>
+            <Link href="/projects">Projekti</Link>
+            <Link href="/contacts">Kontakti</Link>
           </ul>
         </div>
       </nav>

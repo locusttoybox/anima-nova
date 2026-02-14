@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface MobileMenuProps {
   isOpen: boolean;
   setIsOpen: (val: boolean) => void;
@@ -14,19 +16,19 @@ export const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
     >
       <ul className="text-white text-2xl space-y-8 text-center">
         <li>
-          <a href="#about" onClick={() => setIsOpen(false)}>
+          <Link href="#about" onClick={() => setIsOpen(false)}>
             Par Mums
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#projects" onClick={() => setIsOpen(false)}>
+          <Link href="#projects" onClick={() => setIsOpen(false)}>
             Projekti
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#contact" onClick={() => setIsOpen(false)}>
+          <Link href="#contact" onClick={() => setIsOpen(false)}>
             Kontakti
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

@@ -54,3 +54,25 @@ textarea,
     scrollbar-width: none;
   }
 }
+
+@keyframes orbital-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(8px, -12px);
+  }
+  50% {
+    transform: translate(15px, 0px);
+  }
+  75% {
+    transform: translate(8px, 12px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-orbital {
+  animation: orbital-float 8s ease-in-out infinite;
+}

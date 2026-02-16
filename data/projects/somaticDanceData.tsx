@@ -33,6 +33,16 @@ const somaticDanceData = {
         },
       ],
     },
+    {
+      id: "3",
+      text: "Es esmu Agnese Esme - Tavs dabiskuma gids.",
+      descriptionPart1:
+        "Es vadu cilvēkus pieredzēs, kas palīdz atcerēties un atjaunot savu dabisko būtību. Strādājot ar ķermeni, nervu sistēmu un emocijām, es palīdzu atklāt, kur dzīves enerģija ir iestrēgusi, un atgūt dzīvotspēju, prieku un iekšēju brīvību.",
+      descriptionPart2:
+        "Mana integratīvā pieeja ir elastīga un personīga – no plašā metožu klāsta es izvēlos to, kas vislabāk palīdz Tev atgriezties pie sevis, salāgojot prātu ar ķermeni un ikdienas ritmu ar Tavām personīgajām vajadzībām.",
+      descriptionPart3:
+        "Manā darbā ir vieta arī tam, par ko bieži klusējam - kaunam, nogurumam un kontroles smagumam. Es strādāju ar šīm tēmām drošā, ķermeniskā veidā, palīdzot atmodināt iekšēju mieru un harmonisku dzīves plūsmu saskaņā ar Tavu unikālo ritmu.",
+    },
   ],
 };
 

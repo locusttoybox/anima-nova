@@ -13,7 +13,7 @@ export default function Projects() {
 
   return (
     <main>
-      <section className="max-w-6xl mx-auto relative lg:pb-24 px-4">
+      <section className="max-w-6xl mx-auto relative lg:pb-24">
         <div className="lg:pt-32 md:pt-32 pt-20">
           <h1 className="text-gray-800 text-4xl mb-12">
             {somaticDanceData.sectionTitle}
@@ -21,7 +21,7 @@ export default function Projects() {
         </div>
 
         {project1 && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-30 md:gap-30 gap-10 mb-24 lg:mb-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-30 md:gap-30 gap-20 mb-24 lg:mb-0">
             <div>
               <h3 className="text-gray-800 text-2xl mt-2 italic border-l-2 border-secondary pl-6">
                 {project1.title}
@@ -81,7 +81,7 @@ export default function Projects() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto relative px-4 py-24 lg:py-36">
+      <section className="max-w-6xl mx-auto relative py-24 lg:py-36">
         {project3 && (
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-30 md:gap-30 gap-10">
             {" "}

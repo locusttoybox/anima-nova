@@ -16,17 +16,17 @@ export const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
     >
       <ul className="text-white text-2xl space-y-8 text-center">
         <li>
-          <Link href="#about" onClick={() => setIsOpen(false)}>
+          <Link href="/about" onClick={() => setIsOpen(false)}>
             Par Mums
           </Link>
         </li>
         <li>
-          <Link href="#projects" onClick={() => setIsOpen(false)}>
+          <Link href="/projects" onClick={() => setIsOpen(false)}>
             Projekti
           </Link>
         </li>
         <li>
-          <Link href="#contact" onClick={() => setIsOpen(false)}>
+          <Link href="/contact" onClick={() => setIsOpen(false)}>
             Kontakti
           </Link>
         </li>

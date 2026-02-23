@@ -5,19 +5,20 @@ export default function About() {
   return (
     <main>
       <section className="bg-gradient-to-b from-accent to-[#fefcf7] -mt-5 w-screen relative left-1/2 right-1/2 -ml-[50vw] mr-[50vw] overflow-hidden">
-        <div className="max-w-6xl mx-auto pt-32 pb-20 px-4">
-          {/* 1. TOP SECTION: Text + Animation Grid */}
+        <div className="max-w-6xl mx-auto pt-20 pb-20 px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="max-w-2xl">
               <h1 className="text-gray-800 text-4xl mb-12 font-serif">
-                {aboutPageData.sectionTitle}
+                {aboutPageData.hero.sectionTitle}
               </h1>
+              <p className="text-lg leading-relaxed text-gray-800 mb-10">
+                {aboutPageData.hero.mainDescription}
+              </p>
 
-              {/* Map only the first two points here */}
-              {aboutPageData.points.slice(0, 2).map((point, index) => (
+              {aboutPageData.features.slice(0, 1).map((point, index) => (
                 <div key={index} className="mb-10">
                   <h3 className="text-2xl mb-4 text-gray-800">{point.title}</h3>
-                  <p className="text-lg leading-relaxed text-gray-700">
+                  <p className="text-lg leading-relaxed text-gray-800">
                     {point.description}
                   </p>
                 </div>
@@ -40,17 +41,16 @@ export default function About() {
                   </div>
                 </div>
 
-                {/* Optional: A second thin line for complexity */}
                 <div className="absolute w-48 h-48 border border-gray-400/10 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
               </div>
             </div>
           </div>
 
           <div className="max-w-2xl">
-            {aboutPageData.points.slice(2).map((point, index) => (
+            {aboutPageData.features.slice(1).map((point, index) => (
               <div key={index}>
                 <h3 className="text-2xl mb-6 text-gray-800">{point.title}</h3>
-                <p className="text-lg leading-relaxed text-gray-700 mb-8">
+                <p className="text-lg leading-relaxed text-gray-800 mb-8">
                   {point.description}
                 </p>
 
@@ -67,6 +67,28 @@ export default function About() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="max-w-6xl mx-auto relative lg:pb-24 px-4">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl mb-8 text-gray-800">
+            {aboutPageData.team.title}
+          </h2>
+          <p className="text-lg leading-relaxed text-gray-800 mb-12">
+            {aboutPageData.team.description}
+          </p>
+
+          {aboutPageData.team.members.map((member, index) => (
+            <div key={member.id} className="mb-10">
+              <h3 className="text-2xl mb-4 text-gray-800">{member.name}</h3>
+              <p className="text-lg font-medium text-secondary mb-2">
+                {member.role}
+              </p>
+              <p className="text-lg leading-relaxed text-gray-800">
+                {member.bio}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
     </main>
